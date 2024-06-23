@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Beam Design Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Beam Design Result</h1>
+        <p>Depth: {{ result.depth }} mm</p>
+        <p>Width: {{ result.width }} mm</p>
+        <p>Required Area of Steel: {{ result.required_area_steel }} mm²</p>
+        <p>Total Moment Capacity: {{ result.total_moment_capacity }} kNm</p>
+        <p>Rebar Diameter: {{ result.rebar_diameter }} mm</p>
+        <p>Number of Rebars: {{ result.num_rebars }}</p>
+        <p>Rebar Spacing: {{ result.rebar_spacing }} mm</p>
+        <p>Stirrup Diameter: {{ result.stirrup_diameter }} mm</p>
+        <p>Number of Stirrups: {{ result.num_stirrups }}</p>
+        <p>Stirrup Spacing: {{ result.stirrup_spacing }} mm</p>
+    </div>
+</body>
+</html>
